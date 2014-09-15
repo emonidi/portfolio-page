@@ -1,0 +1,377 @@
+   /* Welcome to Compass.
+* In this file you should write your main styles. (or centralize your imports)
+* Import this file using the following HTML or equivalent:
+* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 25, ../sass/screen.scss */
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/* line 34, ../sass/screen.scss */
+body {
+  background: #bfbfbf;
+}
+
+/* line 39, ../sass/screen.scss */
+.green-text {
+  color: #2ecc71;
+  margin: 0 !important;
+}
+
+/* line 44, ../sass/screen.scss */
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* line 50, ../sass/screen.scss */
+.btn {
+  font-family: "Roboto";
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 400px;
+  padding: 10px 20px;
+  border: solid 1px;
+}
+
+/* line 61, ../sass/screen.scss */
+.btn-white {
+  color: white;
+  border-color: white;
+}
+
+/* line 66, ../sass/screen.scss */
+.btn-green {
+  color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+/* line 72, ../sass/screen.scss */
+.top-image {
+  width: 100%;
+  height: 600px;
+  background-image: url(https://scontent-b-fra.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/552503_3890027803485_334525701_n.jpg?oh=4520cc01230757afcd8de7224d7c1c43&oe=54863D0C);
+  background-size: cover;
+  margin-top: 0px;
+  top: 0px;
+  position: relative;
+}
+/* line 81, ../sass/screen.scss */
+.top-image .title-holder {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 86, ../sass/screen.scss */
+.top-image .title-holder h1 {
+  color: white;
+  margin: 0 auto;
+  font-size: 38px;
+  margin-top: 225px;
+  font-weight: 500;
+  font-family: "Roboto",san-serif;
+  position: relative;
+  line-height: 58px;
+  max-width: 500px;
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+  margin-bottom: 60px;
+}
+
+/* line 106, ../sass/screen.scss */
+.header {
+  margin: 0;
+  background: #252e30;
+  font-family: "Roboto";
+  padding: 15px 0;
+  color: white;
+  width: 100%;
+}
+/* line 116, ../sass/screen.scss */
+.header .logo {
+  float: left;
+  margin-left: 50px;
+}
+/* line 119, ../sass/screen.scss */
+.header .logo .initials {
+  font-weight: 700;
+  font-size: 20px;
+  padding: 5px;
+  background: #4b5456;
+}
+/* line 125, ../sass/screen.scss */
+.header .logo span {
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: 400;
+}
+/* line 134, ../sass/screen.scss */
+.header .nav {
+  float: right;
+  margin-right: 50px;
+}
+/* line 139, ../sass/screen.scss */
+.header .nav ul {
+  padding: 0;
+  margin: 0;
+  display: inline-table;
+}
+/* line 144, ../sass/screen.scss */
+.header .nav ul li {
+  float: left;
+  margin-right: 30px;
+}
+/* line 149, ../sass/screen.scss */
+.header .nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+/* line 155, ../sass/screen.scss */
+.header .nav ul li a:hover {
+  color: #2ecc71;
+}
+
+/* line 165, ../sass/screen.scss */
+.white-background {
+  background: white;
+}
+
+/* line 168, ../sass/screen.scss */
+.col-3 {
+  width: 30%;
+  float: left;
+  margin-left: 3.3%;
+}
+/* line 172, ../sass/screen.scss */
+.col-3:first-child {
+  margin: 0;
+}
+
+/* line 177, ../sass/screen.scss */
+.inline {
+  display: inline-table;
+}
+
+/* line 181, ../sass/screen.scss */
+.row {
+  font-family: "Roboto";
+  padding: 60px 6%;
+  width: 88%;
+}
+/* line 186, ../sass/screen.scss */
+.row h2 {
+  color: #566366;
+  font-weight: 700;
+  font-size: 19px;
+}
+/* line 193, ../sass/screen.scss */
+.row p {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #919191;
+  padding-top: 30px;
+  line-height: 14px;
+  font-size: 12px;
+}
+
+/* line 203, ../sass/screen.scss */
+.row.about {
+  background: #f2f2f1;
+  padding: 0px;
+  width: 100%;
+}
+/* line 208, ../sass/screen.scss */
+.row.about .image {
+  float: left;
+  max-width: 342px;
+}
+/* line 211, ../sass/screen.scss */
+.row.about .image img {
+  width: 100%;
+}
+/* line 216, ../sass/screen.scss */
+.row.about .info {
+  padding: 60px;
+  float: left;
+  width: 562px;
+}
+/* line 220, ../sass/screen.scss */
+.row.about .info h2 {
+  text-transform: uppercase;
+}
+/* line 224, ../sass/screen.scss */
+.row.about .info .skills-wrapper {
+  width: 100%;
+}
+/* line 228, ../sass/screen.scss */
+.row.about .info .skills-wrapper .skill {
+  width: 50%;
+  margin-top: 30px;
+  float: left;
+}
+/* line 232, ../sass/screen.scss */
+.row.about .info .skills-wrapper .skill h3 {
+  color: #566366;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 27px;
+}
+/* line 240, ../sass/screen.scss */
+.row.about .info .skills-wrapper .skill p {
+  padding-left: 32px;
+  padding-top: 20px;
+}
+/* line 247, ../sass/screen.scss */
+.row.about .info .skills-wrapper .skill .web {
+  background: url('/images/../../../porto/styles/images/icons-sba150ff642.png') 0 -23px;
+}
+/* line 252, ../sass/screen.scss */
+.row.about .info .skills-wrapper .skill .pencil {
+  background: url('/images/../../../porto/styles/images/icons-sba150ff642.png') 0 -72px;
+}
+/* line 256, ../sass/screen.scss */
+.row.about .info .skills-wrapper .skill .people {
+  background: url('/images/../../../porto/styles/images/icons-sba150ff642.png') 0 0;
+  line-height: 24px;
+}
+/* line 261, ../sass/screen.scss */
+.row.about .info .skills-wrapper .skill .paperclip {
+  background: url('/images/../../../porto/styles/images/icons-sba150ff642.png') 0 -50px;
+  line-height: 23px;
+}
+/* line 266, ../sass/screen.scss */
+.row.about .info .skills-wrapper .skill .icon {
+  padding-left: 32px;
+  background-repeat: no-repeat;
+}
+
+/* line 275, ../sass/screen.scss */
+.row.skills-row {
+  background: white;
+}
+/* line 277, ../sass/screen.scss */
+.row.skills-row .col-wrapper {
+  width: 100%;
+}
+/* line 280, ../sass/screen.scss */
+.row.skills-row .col-wrapper .col {
+  width: 46%;
+  float: left;
+}
+/* line 283, ../sass/screen.scss */
+.row.skills-row .col-wrapper .col:first-child {
+  margin-right: 4%;
+}
+/* line 289, ../sass/screen.scss */
+.row.skills-row .col-wrapper .text h2 {
+  text-transform: uppercase;
+}
+/* line 292, ../sass/screen.scss */
+.row.skills-row .col-wrapper .text p {
+  margin-bottom: 50px;
+}
+
+/* line 299, ../sass/screen.scss */
+.bar-wrapper {
+  display: block;
+  margin-top: 45px;
+  font-family: "Roboto Condensed";
+}
+/* line 303, ../sass/screen.scss */
+.bar-wrapper h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+/* line 307, ../sass/screen.scss */
+.bar-wrapper .bar {
+  width: 100%;
+  height: 25px;
+  background: #f2f2f1;
+}
+/* line 312, ../sass/screen.scss */
+.bar-wrapper .bar .progress {
+  height: 25px;
+  background: #2ecc71;
+}
+/* line 315, ../sass/screen.scss */
+.bar-wrapper .bar .progress span {
+  color: white;
+  line-height: 25px;
+  font-size: 16px;
+  float: right;
+  margin-right: 10px;
+}

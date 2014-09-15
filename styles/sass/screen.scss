@@ -1,0 +1,325 @@
+    /* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+@import "compass/utilities/sprites";
+
+
+
+$icons:sprite-map("../../../porto/styles/images/icons/*.png");
+
+//colors
+$white:#ffffff;
+$dark-grey:#252e30;
+$light-grey:#f2f2f1;
+$green:#2ecc71;
+$black:#191f21;
+$font-head:#566366;
+$font-color:#919191;
+
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+
+body{
+  background:#bfbfbf;
+}
+
+
+.green-text{
+  color:$green;
+  margin:0 !important;
+}
+
+.container{
+  max-width:1024px;
+  margin:0 auto;
+
+}
+
+.btn{
+
+      font-family:"Roboto";
+      font-size:12px;
+
+      text-decoration:none;
+      font-weight:400px;
+      padding:10px 20px;
+      border:solid 1px;
+   }
+
+ .btn-white{
+    color:$white;
+    border-color:$white;
+ }
+
+.btn-green{
+    color:$green;
+    border-color:$green;
+ }
+
+
+.top-image{
+  width:100%;
+  height:600px;
+  background-image:url(https://scontent-b-fra.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/552503_3890027803485_334525701_n.jpg?oh=4520cc01230757afcd8de7224d7c1c43&oe=54863D0C);
+  background-size:cover;
+  margin-top:0px;
+  top:0px;
+  position:relative;
+
+  .title-holder{
+    width:100%;
+    position:absolute;
+    text-align:center;
+    text-transform:uppercase;
+    h1{
+      color:$white;
+
+      margin:0 auto;
+
+      font-size:38px;
+      margin-top:225px;
+      font-weight:500;
+      font-family:"Roboto",san-serif;
+      position:relative;
+      line-height:58px;
+      max-width:500px;
+      border-top:solid 2px $white;
+      border-bottom:solid 2px $white;
+      margin-bottom:60px;
+    }
+  }
+}
+
+
+.header{
+  margin:0;
+  background:$dark-grey;
+
+  font-family:"Roboto";
+
+
+  padding:15px 0;
+  color:$white;
+  width:100%;
+  .logo{
+    float:left;
+    margin-left:50px;
+    .initials{
+      font-weight:700;
+      font-size:20px;
+      padding:5px;
+      background:#4b5456;
+    }
+    span{
+      margin-left: 10px;
+      text-transform: uppercase;
+      font-size: 19px;
+      font-weight: 400;
+    }
+
+  }
+
+  .nav{
+
+    float:right;
+    margin-right:50px;
+
+    ul{
+      padding:0;
+      margin:0;
+
+      display:inline-table;
+      li{
+
+        float:left;
+
+        margin-right:30px;
+        a{
+          text-decoration:none;
+          color:$white;
+          font-size:16px;
+          text-transform:uppercase;
+
+          &:hover{
+            color:$green;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.white-background{
+  background:$white;
+}
+.col-3{
+ width:30%;
+ float:left;
+ margin-left:3.3%;
+ &:first-child{
+    margin:0;
+  }
+}
+
+.inline{
+  display:inline-table;
+}
+
+.row{
+  font-family:"Roboto";
+  padding:60px 6%;
+  width:88%;
+
+  h2{
+    color:$font-head;
+
+    font-weight:700;
+    font-size:19px;
+
+  }
+  p{
+   font-family: 'Roboto Condensed', sans-serif;
+    color:$font-color;
+    padding-top:30px;
+    line-height:14px;
+    font-size:12px;
+  }
+}
+
+
+.row.about{
+   background:$light-grey;
+   padding:0px;
+   width:100%;
+
+   .image{
+     float:left;
+     max-width:342px;
+     img{
+       width:100%;
+     }
+   }
+
+   .info{
+     padding:60px;
+     float:left;
+     width:562px;
+     h2{
+       text-transform:uppercase;
+     }
+
+     .skills-wrapper{
+       width:100%;
+
+
+       .skill{
+         width:50%;
+          margin-top:30px;
+         float:left;
+         h3{
+           color:$font-head;
+           font-size:14px;
+           text-transform:uppercase;
+           font-weight:600;
+           line-height:27px;
+         }
+
+         p{
+           padding-left:32px;
+           padding-top:20px;
+         }
+
+
+
+         .web{
+           background:sprite($icons,web);
+
+         }
+
+         .pencil{
+           background:sprite($icons,pencil);
+         }
+
+         .people{
+           background:sprite($icons,people);
+           line-height:24px;
+         }
+
+         .paperclip{
+           background:sprite($icons,paperclip);
+           line-height:23px;
+         }
+
+         .icon{
+           padding-left:32px;
+           background-repeat:no-repeat;
+         }
+       }
+     }
+   }
+}
+
+.row.skills-row{
+  background:$white;
+  .col-wrapper{
+    width:100%;
+
+    .col{
+      width:46%;
+      float:left;
+      &:first-child{
+        margin-right:4%;
+      }
+    }
+
+    .text{
+      h2{
+        text-transform:uppercase;
+      }
+      p{
+        margin-bottom:50px;
+      }
+    }
+  }
+}
+
+.bar-wrapper{
+  display:block;
+  margin-top:45px;
+  font-family:"Roboto Condensed";
+  h2{
+    text-transform:uppercase;
+    margin-bottom:10px;
+  }
+  .bar{
+    width:100%;
+    height:25px;
+    background:#f2f2f1;
+
+    .progress{
+      height:25px;
+      background:$green;
+      span{
+        color:$white;
+        line-height:25px;
+
+        font-size:16px;
+        float:right;
+        margin-right:10px;
+      }
+    }
+  }
+}
